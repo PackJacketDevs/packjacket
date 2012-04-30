@@ -158,7 +158,12 @@ public class Shortcut implements XMLInterface {
         s.requiresSudo = requiresSudo;
         s.allUsers = allUsers;
         s.rootUser = rootUser;
-        s.createForPacks = new ArrayList<String>(createForPacks);
+       
+        if (createForPacks == null)
+            s.createForPacks = new ArrayList<String>();
+        else
+            s.createForPacks = new ArrayList<String>(createForPacks);
+        
         return s;
     }
 
