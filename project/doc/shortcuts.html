@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Shortcuts</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColHybLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1>PackJacket - Documentation</h1>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+<ul id="MenuBar1" class="MenuBarVertical">
+	<li><a href="http://packjacket.sf.net/">PackJacket Main Site</a></li>
+    <li><a href="how_to_use_packjacket.html">How To Use PackJacket</a></li>
+    <li><a href="general_info.html">General Info</a></li>
+    <li><a href="authors.html">Authors</a></li>
+    <li><a href="gui.html">GUI</a></li>
+    <li><a href="locale.html">Locale</a></li>
+    <li><a href="panels.html">Panels</a></li>
+    <li><a href="#" class="MenuBarItemSubmenu">Packs</a>
+        <ul>
+          <li><a href="packs/general.html">General</a></li>
+          <li><a href="packs/files.html">Files</a></li>
+          <li><a href="packs/executables.html">Executables</a></li>
+        </ul>
+    </li>
+    <li><a href="packaging.html">Packaging</a></li>
+    <li><a href="shortcuts.html">Shortcuts</a></li>
+    <li><a href="userInput.html">User Input</a></li>
+    <li><a href="processes.html">Processes</a></li>
+    <li><a href="license.html">Documentation License</a></li>
+  </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+    <h2>Shortcuts</h2>
+    <p>PackJacket  allows you to enter specifications you want for the shortcuts. They are not mandatory, but if they are not  specified shortcuts will not be created.</p>
+    <p><strong> Group Structure</strong><br />
+    This  value specifies the name of the group, in which the shortcuts will be  kept. For example, in the Windows  operating system in the start menu, each program has a group where the  shortcuts are kept. The group structure  can be changed by the user of the installer.</p>
+    <p><strong>Location</strong><br />
+    This  value specifies where the group created is going to show up. Applications is recommended, since this is  the option which is commonly used.</p>
+    <p><strong>Pre-Select “Desktop Shortcuts”  Checkbox</strong><br />
+    Specifies whether the checkbox shown to the user on the installer for  creating desktop shortcuts will be check marked by default or not. The user of the installer can uncheck the  checkbox.</p>
+    <p><strong>Name</strong><br />
+    This  value is the name of the shortcut and is mandatory if you want to create  shortcuts.</p>
+    <p><strong>Target File/ URL</strong><br />
+    You  have a choice of making the shortcut linking to a file or a URL. A target file or URL must be provided since  it is mandatory.</p>
+    <p><strong>Target File</strong><br />
+    This  value is used to specify the location to the application, you want to start,  when the user clicks the shortcut. $INSTALL_PATH/  is mandatory to be in the front, since that is the directory where you program  was installed to. For example if the file was in the  program directory, you  would enter the name of the application you want to start with the extension  after the “$INSTALL_PATH/”.  If the file  you want to start was in a folder in your program directory you would specify  the folder name with a ‘/’ after it, then you would specify the application  name with the extension after the “$INSTALL_PATH/”.  </p>
+    <p><strong>URL</strong><br />
+    If  you want to use the shortcut for a URL and not a file, you may then check mark  the URL checkbox and specify the URL, you want to link to.</p>
+    <p><strong>Description</strong><br />
+    The  description of the shortcut can be seen by the user of the installer. It can be seen in various ways, depending on  the operating system being used. You can  use it to tell the user of the project, what the shortcut launches. It is not mandatory to specify a value.</p>
+    <p><strong>Command Line Arguments</strong><br />
+    If  you choose to use command line arguments, the value of this will be passed to  the application as command line. It is recommended  not to use this, since it is not supported by all operating systems. This is not mandatory.</p>
+    <p><strong>Working Directory</strong><br />
+    The  value of this specifies the working directory for the application when it is  run/launched. This feature is also not  recommended, since it is not supported by all operating systems. This is not mandatory.</p>
+    <p><strong>Icon File</strong><br />
+    This specifies the icon file for the shortcut. The icon file must be included in the  installer and you must do the same as you did in target file, where you must  keep “$INSTALL_PATH/” in the front and specify the rest of the location.  “$INSTALL_PATH/” is the directory for your  project.  This is not mandatory.</p>
+    <p><strong>Icon Index</strong><br />
+    Certain  files support multiple icons for a file.  Here you may specify which index you want to use as the icon for this  shortcut. This is also not recommended,  since most file don’t support this and some operating systems also don’t  support it.  So it is best to keep it at  0 if you are not going to use it. This  is not mandatory.  </p>
+    <p><strong>Terminal</strong><br />
+    This  allows the user to see the console output of the project. This feature is only supported in  Linux/Unix. This is not mandatory.</p>
+    <p><strong>Initial State</strong><br />
+    The No Show choice is used when you launch a script, which causes a  command window and the application to show up and you don’t want the command  window to show. No Show  stops the command window from showing.  You may choose Normal to do what is default. Maximized allows you to show both the command  window and application. Minimized makes  the command window be minimized but still shows up on the taskbar  (Windows). On Linux/Unix, this feature  is not compatible, so normal would be used by default, when the installer is  ran on a Linux/Unix computer.</p>
+    <h3><em>Place in ...</em></h3>
+    <p><strong>Program Group</strong><br />
+    If  specified, the shortcut will be put in the group menu. On Linux/Unix it will be on the top level.</p>
+    <p><strong>Start Menu</strong><br />
+    If  specified, the shortcut is put in the top most menu, available for putting the  shortcut, which is usually the start menu. This is not supported on Linux/Unix, so if it is specified and the  installer is ran on a Linux/Unix computer, it will just not place it in the  start menu.</p>
+    <p><strong>Desktop</strong><br />
+    If  specified, the shortcut will be placed on the desktop. If this option is specified and the installer  is ran on a Linux/Unix computer, the shortcut will only be put on the desktop  of the user who is running the installer, so it won’t be put on all the users.</p>
+    <p><strong>Start Up</strong><br />
+    If  specified, the program will launch and display, when the operating system is  launched. It is not supported on  Linux/Unix. If it is ran on a Linux/Unix  computer, it will not show up when the operating system is launched.</p>
+    <p><strong>Applications</strong><br />
+    If  specified, the shortcut will be placed in the applications menu. This is the same place as where the Group  Structure is. This is also not supported  on a Linux/Unix computer, so it will have no effect if ran on a Linux/Unix  computer.  </p>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<br class="clearfloat" />
+	<div id="footer">
+      <p align="center"><a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"><img src="http://creativecommons.org/images/public/somerights20.png" style="border-width: 0pt;" alt="Creative Commons License" /> </a> &nbsp;<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=235519&amp;type=4" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a></p>
+
+      <!-- end #footer -->
+  </div>
+<!-- end #container --></div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>

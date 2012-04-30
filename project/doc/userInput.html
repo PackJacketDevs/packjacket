@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>User Input</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColHybLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1>PackJacket - Documentation</h1>
+    <!-- end #header --></div>
+  <div id="sidebar1">
+    <!-- end #sidebar1 -->
+<ul id="MenuBar1" class="MenuBarVertical">
+	<li><a href="http://packjacket.sf.net/">PackJacket Main Site</a></li>
+    <li><a href="how_to_use_packjacket.html">How To Use PackJacket</a></li>
+    <li><a href="general_info.html">General Info</a></li>
+    <li><a href="authors.html">Authors</a></li>
+    <li><a href="gui.html">GUI</a></li>
+    <li><a href="locale.html">Locale</a></li>
+    <li><a href="panels.html">Panels</a></li>
+    <li><a href="#" class="MenuBarItemSubmenu">Packs</a>
+        <ul>
+          <li><a href="packs/general.html">General</a></li>
+          <li><a href="packs/files.html">Files</a></li>
+          <li><a href="packs/executables.html">Executables</a></li>
+        </ul>
+    </li>
+    <li><a href="packaging.html">Packaging</a></li>
+    <li><a href="shortcuts.html">Shortcuts</a></li>
+    <li><a href="userInput.html">User Input</a></li>
+    <li><a href="processes.html">Processes</a></li>
+    <li><a href="license.html">Documentation License</a></li>
+</ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+    <h2>User Input</h2>
+    <p>If the checkbox to enable this feature is selected, you will be able to make your own text boxes, checkboxes, and other types of input on a panel and use them to get input from the user during installation. This is an optional feature. You can use the input you get here by using the variable name you specify, in any other part of PackJacket. A common place to use these variables is passing it as args in the Processes section.</p>
+    <p><strong>Title</strong><br />
+      The title of the screen/panel that will display the user inputs you ask for and allow them to enter values.</p>
+    <p><strong>Bold</strong><br />
+    Allows to make the title bold.</p>
+    <p><strong>Italics</strong><br />
+    Allows to make the title appear in italics.</p>
+    <p><strong>Font Multiplier</strong><br />
+Allows make the text bigger.</p>
+    <p><strong>QuickXport User Input</strong><br />
+    You can make all the user input data be written to a text file of your choice (specified with filename text field). This is a way that PackJacket makes including USer Input in your application's laucher easy.<br />
+      <br />
+      List Variable Values: Lists all the variable valuse in a list in the order specified in the User Input section.<br />
+      Example:<br />
+      <code>value1<br />
+      value2<br />
+      value3<br />
+      value4<br />
+      </code><br />
+      List Variable Names and Values: Writes the variable name, then it's value, on the same line.<br />
+      Example:<br />
+      <code>varName1: value1<br />
+      varName1: value2<br />
+      varName1: value3<br />
+      varName1: value4</code><br /> 
+      <br />
+    </p>
+    <p><strong>Add</strong></p>
+    <p>Allows you to add different types of input to get from the user or add text. The different types of inputs and texts are Static text, List Choice, Password Field, File/Directory, Check Box, Text Input, Space and Dividers.  <br />
+    </p>
+    <p><strong><u>Static Text</u></strong><br /> 
+    This allows you to put some text on the panel.</p>
+    <blockquote>
+      <p><strong>Text<br />
+        </strong>The text which will be shown on the panel.</p>
+      <p><strong>Align<br />
+        </strong>Allows you to put the text in the left, centre or right.</p>
+    </blockquote>
+    <p><strong><u>List Choice</u></strong><br />
+      Allows you to add a list of related choices. They can either be in the form of &quot;one-selectable&quot;, which is either multiple radio buttons, or a combo box (use this instead of radio buttons, if you have many options in the list), or &quot;multi-selectable&quot;, which is multiple check boxes.<br />
+      <br />
+    </p>
+    <p><strong>Radio Buttons<br />
+      </strong>This option will allow you to show multiples choices and allow them to choose one of them by clicking the radio button.</p>
+    <blockquote>
+      <p><strong>Variable<br />
+        </strong>This value stored in this variable is what you specify for the choice that was selected by the user.</p>
+      <p><strong>Pre-Selected<br />
+      </strong>Which value to select by default. This is only available after you have entered some choices.</p>
+      <p><strong>Description<br />
+        </strong>Allows you to enter a short text before the list of radio buttons, to make sure the user of the installer understands what it is for. Also allows you to align the description in the left, centre or right. Description is optional. </p>
+      <p><strong>Choices<br />
+        </strong>Allows you to specify the choices that will be provided, by way of the radio buttons.</p>
+      <blockquote>
+        <p><strong>Text<br />
+          </strong>This is what will appear as one of the choices to the user.</p>
+        <p><strong>Value if Selected<br />
+          </strong>If the user chose this choice, whatever you enter here will be the value that is stored in the variable.</p>
+      </blockquote>
+    </blockquote>
+    <p><strong>Combo Box<br />
+      </strong>This option will allow you to show multiples choices and allow them to choose one of them by choosing from a drop-down list.</p>
+    <blockquote>
+      <p><strong>Variable<br />
+        </strong>This value stored in this variable is what you specify for the choice that was selected by the user.</p>
+      <p><strong>Pre-Selected<br />
+        </strong>Which value to select by default. This is only available after you have entered some choices.</p>
+      <p><strong>Description<br />
+          </strong>Allows you to enter a short text above the list drop-down box, to make sure the user of the installer understands what it is for. Also allows you to align the description in the left, centre or right. Description is optional.</p>
+      <p><strong>Combo Box Label<br />
+        </strong>This allows you to put a label/text beside the combo box, so the user knows what it is for.</p>
+      <p><strong>Choices<br />
+        </strong>Allows you to specify the choices that will be provided, by way of the combo box.</p>
+      <blockquote>
+        <p><strong>Text<br />
+              </strong>This is what will appear as one of the choices to the user.</p>
+        <p><strong>Value if Selected<br />
+              </strong>If the user chose this choice, whatever you enter here will be the value that is stored in the variable.</p>
+      </blockquote>
+    </blockquote>
+    <p><strong>Check Boxes<br />
+      </strong>Allows you to display multiple checkboxes, with text beside it which the user can check mark or not. Allows multile choices to be made. In other words, they can select more than one choice, unlike radio buttons and combo boxes.</p>
+    <blockquote>
+      <p><strong>Description<br />
+          </strong>Allows you to enter a short text above the list of check boxes, to make sure the user of the installer understands what it is for. Also allows you to align the description in the left, centre or right. Description is optional.</p>
+      <p><strong>Choices<br />
+        </strong>Allows you to specify the choices that will be provided, by way of the check boxes.</p>
+      <blockquote>
+        <p><strong>Text<br />
+                  </strong>This is what will appear as one of the choices to the user.</p>
+        <p><strong>Variable<br />
+                  </strong>This is the variable for the checkbox. The value of this depends on the is the user selects or does not select the checkbox. These values can be set with the following two paramters.</p>
+        <p><strong>Value if Selected<br />
+                  </strong>If the user chose this choice, whatever you enter here will be the value that is stored in the variable.</p>
+        <p><strong>Value if Not Selected<br />
+          </strong>If the user doesn't chose this choice, whatever you enter here will be the value that is stored in the variable.</p>
+        <p><strong>Pre-selected</strong><br /> 
+          Allows you to choose whether you want the checkbox checkmarked by defualt or not.</p>
+      </blockquote>
+    </blockquote>
+    <p><strong><u>Password Field</u><br />
+    </strong>Allows you to get the user to enter a password and also checks whether the retyped password matches the password typed first. If they dont match a error message will be shown and wait until the user enters teh same password for both input boxes.</p>
+    <p><strong>Variable<br />
+    </strong>The value in this variable is the password that is the entered by the user.</p>
+    <p><strong>First Label<br />
+    </strong>This is the label/text which will be shown for the password input for the first of two boxes. It is used to ask to enter a password.</p>
+    <p><strong>Retype Label<br />
+    </strong>This is the label/text which will be shown for the password input for the first of two boxes.  It is used to ask the user to retype the password to verify.</p>
+    <p><strong>Align<br />
+    </strong>Allows you to put the text and input box in the left, centre or right.</p>
+    <p><strong>Width<br />
+    </strong>Allows you to specify how wide you want the box, where the user of the installer will enter the password.</p>
+    <p><strong><u>File/Directory</u><br />
+    </strong>This input will present the user to  browse for a file or directory. If you chose file, the installer will make sure the user chooses a file and if you chose directory, it would be made sure that a directory was chosen.</p>
+    <p><strong>Variable<br />
+    </strong>The value in this variable will be the full path of the file or directory.</p>
+    <p><strong>Label Text<br />
+    </strong>This is the text that above the text field and the browse button. It is usually used to give a description of what file they are to browse for.</p>
+    <p><strong>Initial Value<br />
+    </strong>This can be specified if you want a file or directory already entered.</p>
+    <p><strong>Align<br />
+    </strong>Allows you to put the input box in the left, centre or right.</p>
+    <p><strong>Width<br />
+    </strong>Allows you to specify how wide you want the box, where the user of the installer will see the path of the file or directory.</p>
+    <p><strong><u>Check Box</u><br />
+    </strong>This function is nearly the same as the one in list choices, but you here you need to specify them one by them and will not necessarily appear in a cohesive list format.</p>
+    <p><strong>Variable<br />
+        </strong>This is the variable for the checkbox. The value of this depends on the is the user selects or does not select the checkbox.</p>
+    <p><strong>Description<br />
+        </strong>Allows you to enter a short text above the check box, to make sure the user of the installer understands what it is for. Also allows you to align the description in the left, centre or right. Description is optional.</p>
+    <p><strong>Text<br />
+    </strong>This is what will appear to the left of the checkbox.</p>
+    <p><strong>Value if Selected<br />
+          </strong>If the user chose this choice, whatever you enter here will be the value that is stored in the variable.</p>
+    <p><strong>Value if Not Selected<br />
+          </strong>If the user doesn't chose this choice, whatever you enter here will be the value that is stored in the variable.</p>
+    <p><strong>Pre-selected</strong><br />
+      Allows you to choose whether you want the checkbox checkmarked by defualt or not.</p>
+    <p><strong><u>Text Input</u><br />
+    </strong>Here you can allow the user to enter any text in response to the text beside the box.</p>
+    <p><strong>Text on the Label<br />
+    </strong>This is the text which will appear as a label beside the input box.</p>
+    <p><strong>Variable Name<br />
+    </strong>The value typed here will be the variable which stores the value that the user typed during installation.</p>
+    <p><strong>Width<br />
+    </strong>Allows you to specify how wide you want the box, where the user of the installer will enter the input.</p>
+    <p><strong>Initial Value<br />
+    </strong>This value will be put in the the box  by default and is changable by the user.</p>
+    <p><strong>Description<br />
+    </strong>Allows you to enter a short text above the check box, to make sure the user of the installer understands what it is for. Also allows you to align the description in the left, centre or right. Description is optional.</p>
+    <p><strong><u>Space</u></strong><br />
+    Allows you to put a space between the previous User Input element and the next one.</p>
+    <p><strong><u>Divider</u><br />
+    </strong>Allows you to put a horizontal line between the previous User Input element and the next one.</p>
+    <p><strong>Align</strong><br />
+      Specifies whether you want it at the top or bottom.<br />
+    </p>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<br class="clearfloat" />
+  <div id="footer">      <p align="center"><a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"><img src="http://creativecommons.org/images/public/somerights20.png" style="border-width: 0pt;" alt="Creative Commons License" /> </a> &nbsp;<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=235519&amp;type=4" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a></p>
+
+    <!-- end #footer -->
+  </div>
+</div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>

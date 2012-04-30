@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>GUI</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColHybLtHdr">
+
+<div id="container">
+ <div id="header">
+  <h1>PackJacket - Documentation</h1>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+<ul id="MenuBar1" class="MenuBarVertical">
+	<li><a href="http://packjacket.sf.net/">PackJacket Main Site</a></li>
+    <li><a href="how_to_use_packjacket.html">How To Use PackJacket</a></li>
+    <li><a href="general_info.html">General Info</a></li>
+    <li><a href="authors.html">Authors</a></li>
+    <li><a href="gui.html">GUI</a></li>
+    <li><a href="locale.html">Locale</a></li>
+    <li><a href="panels.html">Panels</a></li>
+    <li><a href="#" class="MenuBarItemSubmenu">Packs</a>
+        <ul>
+          <li><a href="packs/general.html">General</a></li>
+          <li><a href="packs/files.html">Files</a></li>
+          <li><a href="packs/executables.html">Executables</a></li>
+        </ul>
+    </li>
+    <li><a href="packaging.html">Packaging</a></li>
+    <li><a href="shortcuts.html">Shortcuts</a></li>
+    <li><a href="userInput.html">User Input</a></li>
+    <li><a href="processes.html">Processes</a></li>
+    <li><a href="license.html">Documentation License</a></li>
+  </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+  <h2>GUI</h2>
+    <p>In the GUI section on PackJacket, you will be allowed to do things related with how the installer looks. </p>
+    <p><strong> Width</strong><br />
+  The width value is the initial width of the window.</p>
+    <p><strong>Height</strong><br />
+The width value is the initial height of the window.</p>
+    <p><strong>Resizable</strong><br />
+ Resizable specifies whether the window size can be adjust by the user of the installer.</p>
+    <p><strong>Logo</strong><br />
+Allows you to put a picture on the language selection dialog which is the first dialog the user will see, when running the installer. The language selection dialog is shown when multiple languages are chosen to offer to the user in the Locale section of PackJacket. The supported pictures are BMP, GIF, JPG, JPEG and PNG. These image types are supported starting from version J2SE1.3 of Java.</p>
+    <p><strong>Side Picture</strong><br />
+The side picture feature allows you to display a picture on the left side of the installer. The supported pictures are BMP, GIF, JPG, JPEG and PNG. These image types are supported starting from version J2SE1.3 of Java.</p>
+    <h2>Advanced</h2>
+    <p>This section are some features that make your isntaller more cutomizable, but are not needed to create a basic, simple installer.</p>
+    <p><strong>Look and Feels</strong><br />
+  The look and feel feature can be used to add looks and feels on an OS basis.  This is not a mandatory feature, which you must specify.  If you don’t specify any look and feel, a default one will be used, depending on the operating system.</p>
+    <p><strong>Look and Feel Name</strong><br />
+The name of the look and feel. There are five different look and feels. They are Kunststoff, Liquid, Metouia, JGoodies Looks and Substance.  <br />
+<br />
+    </p>
+    <h4><em>Operating System</em></h4>
+    <p><strong>Family</strong><br />
+    You  may specify here, if you want to restrict a feature’s effect to a certain  operating system family or if you want it available with all the operating  systems.</p>
+    <p><strong>Name</strong><br />
+    Here  you may choose to restrict a feature’s effect to a certain operating system  name.  Some examples are Windows XP and  Windows Vista. The test is a comparison  against the os.name system property on the install machine.</p>
+    <p><strong>Version</strong><br />
+    Here  you may choose to restrict a feature’s effect to a certain operating system  version. The test is a comparison  against the os.version system property on the install machine.</p>
+    <p><strong>Architecture</strong><br />
+    Here  you may choose to restrict a feature’s effect to a certain operating system  architecture. The test is a comparison  against the os.arch system property on the install machine.<br />
+    <br />
+    </p>
+    <h3><em>Liquid Look and Feel</em></h3>
+    <p><strong>Frames</strong><br />
+  Specifies whether you want the frames of the installer in the Liquid style look and feel.</p>
+    <p><strong>Dialogs</strong><br />
+  Specifies whether you want the dialogs of the installer in the Liquid style look and feel.</p>
+    <br />
+  <h3><em>JGoodies Look and Feel</em></h3>
+    <p><strong>Variant</strong><br />
+Here you may either specify Windows, Plastic, PlasticXP or Plastic3D. The JGoodies Variant is mandatory, if you choose the JGoodies Looks look and feel.</p>
+    <br />
+  <h3><em>Substance Look and Feel</em></h3>
+    <p><strong>Variant</strong><br />
+  You can specify either Business, Business-blue, Business-black, Creme, Sahara, Moderate or Officesilver.</p>
+    <br />
+  <p><strong>Header on Each Panel</strong><br />
+  Specifies whether you want a header to be shown on each panel on the installer. Headers are like titles on top of the panel.<br />
+  </p>
+    <p><strong>Heading Image</strong><br />
+  Here you may specify an image to display an image beside the heading. The header image should be kept at a smaller height, since it might affect the rest of the panel if it is too long. The image is not mandatory to make an installer.</p>
+    <p><strong>Heading Image Position</strong><br />
+  You may specify here, which side you want the heading image. Possible values are left and right. The headers will be adjusted depending on which side the heading image is. A heading image must be specified in order to use this.</p>
+    <p><strong>Font Multiplier</strong><br />
+  Here you may specify how many times bigger you want the header from the standard font size.  Decimals are allowed.</p>
+    <p><strong>Heading Background Colour</strong><br />
+  Here you can specify the background color for the headings.</p>
+    <p><strong>Heading Font Colour</strong><br />
+  Here you can specify the font color for the headings.</p>
+    <p><strong>Show Step Counter</strong><br />
+  If the Show Step Counter checkbox is check marked, a counter will be shown, showing how many panels are completed out of the amount there is.  </p>
+    <p><strong>Counter Type</strong><br />
+  The counter can be displayed as text or as a progress bar and you may specify which you want by specifying a value for the Counter Type. </p>
+    <p><strong>Counter Position</strong><br />
+  You may specify where you want the step counter in Counter Position. The possible positions are In Navigation Bar and In Header. Choosing the in header value will not be the best choice, since it may cause the design of the installer to not look good.</p>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<br class="clearfloat" />
+	<div id="footer">
+      <p align="center"><a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"><img src="http://creativecommons.org/images/public/somerights20.png" style="border-width: 0pt;" alt="Creative Commons License" /> </a> &nbsp;<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=235519&amp;type=4" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a></p>
+
+      <!-- end #footer --><!-- end #footer -->
+  </div>
+<!-- end #container --></div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>
